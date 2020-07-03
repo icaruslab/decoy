@@ -6,7 +6,7 @@ The main advantage Decoy provides is the ability to serve the configured website
 
 **Decoy will proxy all URLs which contains the configured domain in config.py automatically, any other URL will be opened normally without proxy.**
 
-**Usage**
+## Usage
 
 1. Create an account on [Google Cloud Platform](https://cloud.google.com/)
 2. After accessing [Google Cloud Console](https://console.cloud.google.com/) create a new project
@@ -19,16 +19,21 @@ The main advantage Decoy provides is the ability to serve the configured website
 9. Run `gcloud app deploy` and follow the instructions to deploy the app
 10. Finally you can confirm your mirror is running by visiting `[youprojectname].appspot.com`
 
-**Why Google App Engine?**
+## Why Google App Engine?
 
 The main advantage of having the mirror traffic routed through GAE, is the ability to use a sub-domain under appspot.com to access the mirror.
 
 As the same domain is associated with many other Google cloud services it'd be difficult to block it altogether. However, it's possible to block the sub-domain without having to block the entire domain name, in which case you'll be able to get a new mirror up and running in less than two minutes by simply creating a new project with a different name and repeating steps 8:10
 
-**Attribution**
+## Attribution
 
 This project was inspired and built on [mirrorrr](https://github.com/bslatkin/mirrorrr) project.
 
-**Todo**
+## Disclaimer
+
+This project and all Icarus Project’s related products are solely focused and intended to be used as Internet censorship circumvention solutions, more specifically in human rights and independent media context.
+Icarus Project is not responsible for any abuse and/or malicious use of any of its published research results.
+
+## Todo
 
 - [ ] Rewrite in Python3
