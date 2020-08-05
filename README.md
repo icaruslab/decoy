@@ -8,16 +8,17 @@ The main advantage Decoy provides is the ability to serve the configured website
 
 ## Usage
 
-1. Create an account on [Google Cloud Platform](https://cloud.google.com/)
-2. After accessing [Google Cloud Console](https://console.cloud.google.com/) create a new project
-3. Install [Google Cloud SDK](https://cloud.google.com/sdk/install)
-4. Clone the project
-5. Change the `url` variable in config.py
-6. Use your terminal to go the project's directory
-7. Run `gcloud init` to configure GCloud SDK and login to your account.
-8. Select the project you created earlier using `gcloud config set project $project_name`
-9. Run `gcloud app deploy` and follow the instructions to deploy the app
-10. Finally you can confirm your mirror is running by visiting `[youprojectname].appspot.com`
+1. Clone the project `git clone https://github.com/icaruslab/decoy.git`
+2. Create an account on [Google Cloud Platform](https://cloud.google.com/)
+3. After accessing [Google Cloud Console](https://console.cloud.google.com/) create a new project
+4. Install [Google Cloud SDK](https://cloud.google.com/sdk/install)
+5. Clone the project
+6. Change the `url` variable in config.py
+7. Use your terminal to go the project's directory
+8. Run `gcloud init` to configure GCloud SDK and login to your account.
+9. Select the project you created earlier using `gcloud config set project $project_name`
+10. Run `gcloud app deploy` and follow the instructions to deploy the app
+11. Finally you can confirm your mirror is running by visiting `[youprojectname].appspot.com`
 
 ## Why Google App Engine?
 
