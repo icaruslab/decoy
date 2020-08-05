@@ -1,6 +1,6 @@
 # Decoy
 
-Decoy is a reverse-proxy written in python and ready to to deploy on Google App Engine platform. It can be configured to serve a specific website through App Engine.
+Decoy is a reverse-proxy written in python and ready to deploy on Google App Engine platform. It can be configured to serve a specific website through App Engine.
 
 The main advantage Decoy provides is the ability to serve the configured website through GAE platform, using a sub-domain under appspot.com domain.
 
@@ -12,7 +12,6 @@ The main advantage Decoy provides is the ability to serve the configured website
 2. Create an account on [Google Cloud Platform](https://cloud.google.com/)
 3. After accessing [Google Cloud Console](https://console.cloud.google.com/) create a new project
 4. Install [Google Cloud SDK](https://cloud.google.com/sdk/install)
-5. Clone the project
 6. Change the `url` variable in config.py
 7. Use your terminal to go the project's directory
 8. Run `gcloud init` to configure GCloud SDK and login to your account.
