@@ -187,9 +187,11 @@ class MirrorHandler(BaseHandler):
 
     translated_address = self.get_relative_url()[1:]
     if not translated_address:
-      translated_address=base_url  # remove leading /
-    if not base_url in translated_address:
-      return self.redirect(self.request.url.replace(self.request.host, ''))
+      translated_address=base_url
+    if not translated_address.startswith(base_url):
+            # Redirect the user to external URLs
+       self.redirect(HTTP_PREFIX + translated_address)
+       return
 
     mirrored_url = HTTP_PREFIX + translated_address
 
